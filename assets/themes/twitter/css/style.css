@@ -87,3 +87,72 @@ a:hover, a:focus {
     color: #DA7E18;
     text-decoration: underline;
 }
+
+
+body > footer #social {
+    height: 48px;
+    margin-top: 48px;
+    position: relative;
+}
+
+body > footer ul.subscription {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: -24px;
+    width: 100%;
+}
+
+body > footer ul.subscription li, body > footer ul.subscription a {
+    display: inline-block;
+    padding: 0;
+}
+
+body > footer ul.subscription li:first-child {
+    padding: 0 0 0 8px;
+}
+
+
+
+
+body > footer ul.subscription a:before {
+    color: #F7F6F4;
+    font-size: 24px;
+    line-height: 48px;
+}
+body > footer ul.subscription a {
+    margin: 0 8px;
+}
+body > footer ul.subscription a {
+    background-color: #C3C3C3;
+    border-radius: 500px 500px 500px 500px;
+    font-family: fontAwesome;
+    font-size: 0;
+    height: 48px;
+    margin: 0 4px;
+    width: 48px;
+    z-index: 1;
+}
+body > footer ul.subscription li, body > footer ul.subscription a {
+    display: inline-block;
+    padding: 0;
+}
+
+.icon-github-alt:before, body > footer ul.subscription a[rel="subscribe-github"]:before {
+    content: "";
+}
+
+
+.icon-twitter:before, body > footer ul.subscription a[rel="subscribe-twitter"]:before {
+    content: "";
+}
+
+.icon-envelope-alt:before, body > footer ul.subscription a[rel="subscribe-email"]:before {
+    content: "";
+}
+
+.icon-rss:before, body > footer ul.subscription a[rel="subscribe-rss"]:before {
+    content: "";
+}
