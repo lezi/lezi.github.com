@@ -5,6 +5,8 @@ html, body {
 body {
   padding-top: 40px; /* 40px to make the container go all the way to the bottom of the topbar */
 }
+
+
 .container > footer p {
   text-align: center; /* center align it with the container */
 }
@@ -68,4 +70,20 @@ body {
 	border:1px solid #4C964D;
 	color:#FFF;
 }
-	
+
+body {
+	background-color: #ECF0F1;
+    color: #34495E;
+    font-family: "Noto Sans","Helvetica Neue",sans-serif !important;
+}
+
+
+a {
+    color: #E78B24;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #DA7E18;
+    text-decoration: underline;
+}

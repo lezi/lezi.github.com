@@ -1,46 +1,21 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+<div class="row">
+<div class="homepage span10">
+  <h1>Olá. Sou o Osvaldo Junior.</h1>
+  <h2>Crio <a href="http://github.com/lezi" tiltle="My Github Account">software</a> e <a href="#">websites</a> bwé <span>fixes</span>.</h2>
+  <h2>As vezes <a href="/blog">escrevo aqui</a> meus pensamentos.</h2>
+  <h2>Actualmente trabalho como <span style="color:#E78B24;cursos:pointer">OSS admin</span> com focus nas áreas de <span style="color:#E78B24">aprovisionamento</span> e <span style="color:#E78B24">integração</span> de sistemas.</h2>
+  <br />
+  <h2>Para <a href="/about">mais</a> dicas, <a href="mailto:lupazu@gmail.com">dá um fio</a>.</h2>
+</div>
+<div class="span2">
+	<img src="http://www.gravatar.com/avatar/2a860740ceb8d7d6d8187e97927cceee.png"/>
+</div>
+</div>
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
-
-## Update Author Attributes
-
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
-
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
-
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
 
 
