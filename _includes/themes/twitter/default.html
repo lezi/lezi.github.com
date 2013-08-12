@@ -3,18 +3,24 @@
   {% include head.html %}
   <body>
 
-    <div class="topbar">
-      <div class="fill">
-        <div class="container">
-          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-          <ul class="nav">
+  <div class="navbar navbar-fixed-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+        <div class="nav-collapse collapse">
+          <ul class="nav navbar-nav">
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}
           </ul>
-        </div>
+        </div><!--/.nav-collapse -->
       </div>
     </div>
+   
 
     <div class="container">
 
@@ -23,23 +29,7 @@
       </div>
 
       <footer>
-        <div id="social" class="row">
-          <ul class="subscription" data-subscription="rss email">
-            
-            <li><a href="https://github.com/recurser" rel="subscribe-Github" title="Github">Github</a></li>
-            
-            
-            <li><a href="https://twitter.com/daveperrett" rel="subscribe-twitter" title="Twitter">Twitter</a></li>
-            
-            
-            
-            
-            
-              <li><a href="mailto:hello@daveperrett.com" rel="subscribe-email" title="Email">Email</a></li>
-            
-            <li><a href="/atom.xml" rel="subscribe-rss" title="RSS">RSS</a></li>
-          </ul>
-        </div>
+        
         <p>&copy; {{ site.author.name }} 2013 
           proudly powered by <a href="http://jekyllrb.com" target="_blank" title="Static site generator">Jekyll</a>
           and hosted in <a href="http://github.com/lezi/lezi.github.com" target="_blank" title="Yes, this is open sourced">github</a>
@@ -49,5 +39,6 @@
     </div> <!-- /container -->
 
     {% include JB/analytics %}
+    {% include shares.html %}
   </body>
 </html>

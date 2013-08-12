@@ -77,12 +77,18 @@ body {
     font-family: "Noto Sans","Helvetica Neue",sans-serif !important;
 }
 
+body {
+  padding-top: 60px;
+}
 
 a {
     color: #E78B24;
     text-decoration: none;
 }
 
+.homepage {
+  text-align: justify;
+}
 a:hover, a:focus {
     color: #DA7E18;
     text-decoration: underline;
